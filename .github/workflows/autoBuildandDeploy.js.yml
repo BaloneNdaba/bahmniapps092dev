@@ -59,11 +59,6 @@ jobs:
     - name: Push production code to release repo
       run: |
         cd /home/runner/work/bahmniapps092dev/bahmniapps092dev/ui/dist/
-        git config --global user.email "mahaomolise92@gmail.com"
-        git config --global user.name "mahaomolise92"
+        git config --global user.email "balonendaba@gmail.com"
+        git config --global user.name "BaloneNdaba"
         git init
-        git branch -m autobuildmaster
-        git add .
-        git commit -m "release changes to Bahmni apps production code"
-        git remote add github https://${{ secrets.BAHMNI_APPS_092 }}@github.com/eRegister/bahmniapps092dev.git
-        git push -f github autobuildmaster 
